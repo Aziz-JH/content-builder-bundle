@@ -33,9 +33,10 @@ class Content
      */
     public function onGetContentElement($row, $content, $objElement)
     {
-        if ($this->tokenChecker->hasBackendUser()) {
+        if (!$this->tokenChecker->hasBackendUser() || !isset($_GET['inline-edit'])) {
             return $content;
         }
+
         $table = $objElement->ptable;
         $bdMod = [];
         foreach ($GLOBALS['BE_MOD'] as $cat) {

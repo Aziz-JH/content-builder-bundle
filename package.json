@@ -1,6 +1,6 @@
 {
   "name": "content-builder-bundle",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Julian Aziz Haslinger <me@aziz.wtf>",
   "description": "",
   "main": "src/Resources/public/js/content_builder.js",
