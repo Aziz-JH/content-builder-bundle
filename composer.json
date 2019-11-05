@@ -1,0 +1,41 @@
+{
+	"name": "azizjh/content-builder-bundle",
+	"type": "contao-bundle",
+	"description": "",
+	"keywords": ["contao"],
+	"homepage": "https://aziz.wtf/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Julian Aziz Haslinger",
+			"email": "me@aziz.wtf",
+			"homepage": "https://aziz.wtf/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php":">=5.4",
+		"contao/core-bundle":"~4.1",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Aziz\\ContentBuilderBundle\\": "src/"
+		},
+		"exclude-from-classmap": [
+			"src/Resources/contao/"
+		]
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		},
+		"contao-manager-plugin": "Aziz\\ContentBuilderBundle\\ContaoManager\\Plugin"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "*"
+	},
+	"scripts": {
+		"phpcs": "phpcs ./src --extensions=php --standard=PSR12"
+	}
+}

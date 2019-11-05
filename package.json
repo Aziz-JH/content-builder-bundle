@@ -1,0 +1,24 @@
+{
+  "name": "content-builder-bundle",
+  "version": "0.1.2",
+  "author": "Julian Aziz Haslinger <me@aziz.wtf>",
+  "description": "",
+  "main": "src/Resources/public/js/content_builder.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziz-JH/content-builder-bundle.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aziz-JH/content-builder-bundle/issues"
+  },
+  "homepage": "https://github.com/Aziz-JH/content-builder-bundle#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1"
+  }
+}
